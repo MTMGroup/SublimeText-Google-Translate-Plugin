@@ -12,6 +12,7 @@ except:
     from urllib.parse import urlencode, quote
 from json import loads
 import re
+import json
 if sublime.version() < '3':
     from urllib2 import urlopen, build_opener, Request
     from handler_st2 import *
@@ -33,8 +34,8 @@ class GoogleTranslateException(Exception):
 class GoogleTranslate(object):
     string_pattern = r"\"(([^\"\\]|\\.)*)\""
     match_string =re.compile(
-                        r"\,?\[" 
-                           + string_pattern + r"\," 
+                        r"\,?\["
+                           + string_pattern + r"\,"
                            + string_pattern
                         +r"\]")
 
@@ -49,7 +50,7 @@ class GoogleTranslate(object):
             'languages': None,
         }
         self.api_urls = {
-            'translate': 'https://translate.google.com/translate_a/single?client=t&ie=UTF-8&oe=UTF-8&dt=t',
+            'translate': 'https://translate.googleapis.com/translate_a/single?client=gtx&ie=UTF-8&oe=UTF-8&dt=t',
         }
         if not source_lang:
             source_lang = 'auto'
@@ -91,7 +92,7 @@ class GoogleTranslate(object):
             raise GoogleTranslateException(self.error_codes[501])
         except ValueError:
             raise GoogleTranslateException(self.error_codes[503])
-        return self._unescape(self._get_translation_from_json5(json5.encode('utf-8')))
+        return self._get_translation_from_json5(json5.encode('utf-8'))
 
     def _get_json5_from_google(self, text):
         escaped_source = quote(text, '')
@@ -121,14 +122,12 @@ class GoogleTranslate(object):
         return json
 
     def _get_translation_from_json5(self, content):
-        result = ""
-        pos = 2
-        while True:
-            m = self.match_string.match(content.decode('utf-8'), pos)
-            if not m:
-                break
-            result += m.group(1)
-            pos = m.end()
+        #print(content.decode('utf-8'))
+        response = content.decode('utf-8')
+        fixedJSON = re.sub(r',{2,}', ',', response).replace(',]', ']')
+        data = json.loads(fixedJSON)
+        #print(json.dumps(data, sort_keys=False, indent=2, separators=(',', ': ')))
+        result = data[0][0][0]
         return result
 
     def _unescape(self, text):
@@ -164,7 +163,7 @@ class GoogleTranslate(object):
                     'gt':'>','62':'>',
                     'amp':'&','38':'&',
                     'quot':'"','34':'"',}
-        
+
         re_charEntity=re.compile(r'&#?(?P<name>\w+);')
         sz=re_charEntity.search(htmlstr)
         while sz:

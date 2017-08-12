@@ -25,8 +25,8 @@ The "Packages" directory is located at:
 
 * OS X:
 
-        ST2: ~/Library/Application Support/Sublime Text 2/Packages/
-        ST3: ~/Library/Application Support/Sublime Text 3/Packages/
+        ST2: ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+        ST3: ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 
 * Linux:
 
@@ -35,8 +35,8 @@ The "Packages" directory is located at:
 
 * Windows:
 
-        ST2: %APPDATA%/Sublime Text 2/Packages/
-        ST3: %APPDATA%/Sublime Text 3/Packages/
+        ST2: %APPDATA%/Sublime\ Text\ 2/Packages/
+        ST3: %APPDATA%/Sublime\ Text\ 3/Packages/
 
 Configure:
 =========
@@ -44,7 +44,7 @@ Configure:
 Set Target Language AND Source Language [default is auto detect] in user settings:
 
 
-    {     
+    {
         "source_language": "", // eg. en, default is 'auto detect'
         "target_language": "", // default is en
         "target_type": "html",  // or plain or html
@@ -129,8 +129,8 @@ SublimeText Google 翻译插件 支持 ST 2 和 3，支持各种代理！**GFW**
 
 * OS X:
 
-        ST2: ~/Library/Application Support/Sublime Text 2/Packages/
-        ST3: ~/Library/Application Support/Sublime Text 3/Packages/
+        ST2: ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+        ST3: ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 
 * Linux:
 
@@ -139,8 +139,8 @@ SublimeText Google 翻译插件 支持 ST 2 和 3，支持各种代理！**GFW**
 
 * Windows:
 
-        ST2: %APPDATA%/Sublime Text 2/Packages/
-        ST3: %APPDATA%/Sublime Text 3/Packages/
+        ST2: %APPDATA%/Sublime\ Text\ 2/Packages/
+        ST3: %APPDATA%/Sublime\ Text\ 3/Packages/
 
 设置:
 ====
@@ -148,7 +148,7 @@ SublimeText Google 翻译插件 支持 ST 2 和 3，支持各种代理！**GFW**
 从 source_language 翻译到 target_language，你可以在 ST 中设置:
 
 
-    {     
+    {
         "source_language": "", // 默认是 '自动检测'
         "target_language": "", // 默认是 en  英文
         "target_type": "html",  // 输出格式，plain 或者 html 格式
