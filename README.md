@@ -3,9 +3,9 @@ Sublime Text Google Translate Plugin
 
 For SublimeText 2 & 3, support proxy `PROXY_TYPE_SOCKS5` `PROXY_TYPE_SOCKS4` `PROXY_TYPE_HTTP`
 
-**Version:** 2.1.0
+**Version:** 2.1.2
 
-![Sublime Text Google Translate Plugin](https://raw.githubusercontent.com/MTimer/SublimeText-Google-Translate-Plugin/master/GoogleTranslate.gif)
+![Sublime Text Google Translate Plugin](https://raw.githubusercontent.com/zeusintuivo/SublimeText-Google-Translate-Plugin/master/GoogleTranslate.gif)
 ------------------
 
 Install:
@@ -13,11 +13,11 @@ Install:
 
 **[Recommend] Package Control:** [Usage](https://sublime.wbond.net/docs/usage), `Package Control: Install Package` then search `Inline Google Translate`
 
-**Without Git:** Download the latest source from [GitHub](https://github.com/MTimer/SublimeText-Google-Translate-Plugin) and copy the GoogleTranslate folder to your Sublime Text "Packages" directory.
+**Without Git:** Download the latest source from [GitHub](https://github.com/zeusintuivo/SublimeText-Google-Translate-Plugin) and copy the GoogleTranslate folder to your Sublime Text "Packages" directory.
 
 **With Git:** Clone the repository in your Sublime Text "Packages" directory:
 
-    git clone https://github.com/MTimer/SublimeText-Google-Translate-Plugin 'Inline Google Translate'
+    git clone https://github.com/zeusintuivo/SublimeText-Google-Translate-Plugin 'Inline Google Translate'
 
 Folder name must be **Inline Google Translate** !!
 
@@ -25,8 +25,8 @@ The "Packages" directory is located at:
 
 * OS X:
 
-        ST2: ~/Library/Application Support/Sublime Text 2/Packages/
-        ST3: ~/Library/Application Support/Sublime Text 3/Packages/
+        ST2: ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+        ST3: ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 
 * Linux:
 
@@ -35,8 +35,8 @@ The "Packages" directory is located at:
 
 * Windows:
 
-        ST2: %APPDATA%/Sublime Text 2/Packages/
-        ST3: %APPDATA%/Sublime Text 3/Packages/
+        ST2: %APPDATA%/Sublime\ Text\ 2/Packages/
+        ST3: %APPDATA%/Sublime\ Text\ 3/Packages/
 
 Configure:
 =========
@@ -44,9 +44,10 @@ Configure:
 Set Target Language AND Source Language [default is auto detect] in user settings:
 
 
-    {     
+    {
         "source_language": "", // eg. en, default is 'auto detect'
         "target_language": "", // default is en
+        "keep_moving_down": "yes",  // or yes or no Will keep translating down the line
         "target_type": "html",  // or plain or html
         "proxy_enable": "yes",  // enable or disable proxy
         "proxy_type": "socks5", // socks4 or socks5 or http
@@ -88,7 +89,7 @@ Credits:
 =======
 
 * [PySocks](https://github.com/Anorov/PySocks)
-* [MTimer](http://www.mtimer.cn)
+
 
 License:
 =======
@@ -108,7 +109,7 @@ SublimeText Google 翻译插件 支持 ST 2 和 3，支持各种代理！**GFW**
 
 @更多优秀项目 [下载插件中文版](http://dev.mtimecms.com)
 
-**当前版本:** 2.1.0
+**当前版本:** 2.1.1
 
 ------------------
 
@@ -117,11 +118,11 @@ SublimeText Google 翻译插件 支持 ST 2 和 3，支持各种代理！**GFW**
 
 **[推荐] Package Control:** [使用方法](https://sublime.wbond.net/docs/usage), `Package Control: Install Package` 然后搜索 `Inline Google Translate`
 
-**不用 Git:** 从 [GitHub](https://github.com/MTimer/SublimeText-Google-Translate-Plugin) 下载 GoogleTranslate 文件复制到 Sublime Text "程序包" 目录。
+**不用 Git:** 从 [GitHub](https://github.com/zeusintuivo/SublimeText-Google-Translate-Plugin) 下载 GoogleTranslate 文件复制到 Sublime Text "程序包" 目录。
 
 **手动 Git:** 克隆到 Sublime Text "程序包" 目录:
 
-    git clone https://github.com/MTimer/SublimeText-Google-Translate-Plugin 'Inline Google Translate'
+    git clone https://github.com/zeusintuivo/SublimeText-Google-Translate-Plugin 'Inline Google Translate'
 
 目录名必须为 **Inline Google Translate** !!
 
@@ -129,8 +130,8 @@ SublimeText Google 翻译插件 支持 ST 2 和 3，支持各种代理！**GFW**
 
 * OS X:
 
-        ST2: ~/Library/Application Support/Sublime Text 2/Packages/
-        ST3: ~/Library/Application Support/Sublime Text 3/Packages/
+        ST2: ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+        ST3: ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 
 * Linux:
 
@@ -139,8 +140,8 @@ SublimeText Google 翻译插件 支持 ST 2 和 3，支持各种代理！**GFW**
 
 * Windows:
 
-        ST2: %APPDATA%/Sublime Text 2/Packages/
-        ST3: %APPDATA%/Sublime Text 3/Packages/
+        ST2: %APPDATA%/Sublime\ Text\ 2/Packages/
+        ST3: %APPDATA%/Sublime\ Text\ 3/Packages/
 
 设置:
 ====
@@ -148,7 +149,7 @@ SublimeText Google 翻译插件 支持 ST 2 和 3，支持各种代理！**GFW**
 从 source_language 翻译到 target_language，你可以在 ST 中设置:
 
 
-    {     
+    {
         "source_language": "", // 默认是 '自动检测'
         "target_language": "", // 默认是 en  英文
         "target_type": "html",  // 输出格式，plain 或者 html 格式
@@ -192,7 +193,7 @@ SublimeText Google 翻译插件 支持 ST 2 和 3，支持各种代理！**GFW**
 ====
 
 * [PySocks](https://github.com/Anorov/PySocks)
-* [MTimer](http://www.mtimer.cn)
+
 
 版权:
 ===

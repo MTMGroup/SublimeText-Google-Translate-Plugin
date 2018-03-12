@@ -2,7 +2,7 @@ Sublime Text Google Translate Plugin
 ===============================
 
 
-**Version:** 2.1.0
+**Version:** 2.1.1
 
 
 Thank you!
@@ -15,7 +15,7 @@ Configure:
 Set Target Language AND Source Language [default is auto detect] in user settings:
 
 
-    {     
+    {
         "source_language": "", // eg. en, default is 'auto detect'
         "target_language": "", // default is en
         "target_type": "html",  // or plain or html
@@ -65,7 +65,7 @@ Sublime Text Google 翻译插件
 从 source_language 翻译到 target_language，你可以在 ST 中设置:
 
 
-    {     
+    {
         "source_language": "", // 默认是 '自动检测'
         "target_language": "", // 默认是 en  英文
         "target_type": "html",  // 输出格式，plain 或者 html 格式

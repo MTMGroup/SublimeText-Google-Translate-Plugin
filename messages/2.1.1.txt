@@ -1,0 +1,27 @@
+Congratulations! Package updated!
+=================================
+
+**Current Version:** 2.1.0
+
+Updates:
+=======
+
+1. Fix for translating included
+
+
+
+------------------
+
+
+
+Sublime Text Google 翻译插件
+==========================
+
+**当前版本:** 2.1.1
+
+------------------
+
+更新:
+====
+
+1. 修正包括翻译

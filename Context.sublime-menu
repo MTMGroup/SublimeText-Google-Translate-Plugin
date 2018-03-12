@@ -1,9 +1,9 @@
 [
 	{"caption":"-"},
-    { 
-    	"command": "go_translate", 
+    {
+    	"command": "go_translate",
     	"id":"go-translate",
-    	"caption": "Google Translate selected text" 
+    	"caption": "Google Translate selected text"
     },
 	{
 		"command": "go_translate_to",

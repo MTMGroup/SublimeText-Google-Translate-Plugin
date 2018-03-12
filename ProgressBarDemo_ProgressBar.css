@@ -1,0 +1,48 @@
+/*▒▒▒  Body  ▒▒▒*/
+body {
+  color:            #FF0000;
+  background-color: #0000FF;
+  margin:           1px;
+  font-size:        1.5em;
+  padding:          2em;
+}
+
+/*▒▒▒  Headers  ▒▒▒*/
+h1 { font-size: 6em;   }
+h2 { font-size: 5em;   }
+h3 { font-size: 4em;   }
+h4 { font-size: 3em;   }
+h5 { font-size: 2em;   }
+h6 { font-size: 1.5em; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0.2em; margin-bottom: 0.2em; color: #00FF00; }
+
+/*▒▒▒  Blockquotes  ▒▒▒*/
+blockquote { display: block; font-style: italic; }
+
+/*▒▒▒  Horizontal Rule  ▒▒▒*/
+hr { display: block; padding: 1px; margin: 1em 1em; }
+
+/*▒▒▒  Description List  ▒▒▒*/
+dl { display: block; }
+dt { display: block; font-style: italic; font-weight: bold; }
+dd { display: block; margin-left: 1em; }
+
+/*▒▒▒  Preformatted Block  ▒▒▒*/
+pre { display: block; }
+
+/*▒▒▒  Blocks  ▒▒▒*/
+blockquote, ol, ul, dl, p, div {
+  padding:       0;
+  margin-top:    0;
+  margin-bottom: 0.5em;
+  margin-left:   0;
+  margin-right:  0;
+}
+
+/*▒▒▒  Lists  ▒▒▒*/
+dd     { padding-left: 0.5em; }
+ul, ol { padding-left: 2.0em; }
+
+/*▒▒▒  Special Classes  ▒▒▒*/
+.highlight  { padding: 0.5em; }
+.admonition { padding: 0.5em; }

@@ -31,7 +31,7 @@ class SocksiPyConnectionS(httplib.HTTPSConnection):
             sock.settimeout(self.timeout)
         sock.connect((self.host, self.port))
         self.sock = ssl.wrap_socket(sock, self.key_file, self.cert_file)
-            
+
 class SocksiPyHandler(urllib2.HTTPHandler, urllib2.HTTPSHandler):
     def __init__(self, *args, **kwargs):
         self.args = args
@@ -39,13 +39,13 @@ class SocksiPyHandler(urllib2.HTTPHandler, urllib2.HTTPSHandler):
         urllib2.HTTPHandler.__init__(self)
 
     def http_open(self, req):
-        def build(host, port=None, strict=None, timeout=0):    
+        def build(host, port=None, strict=None, timeout=0):
             conn = SocksiPyConnection(*self.args, host=host, port=port, strict=strict, timeout=timeout, **self.kw)
             return conn
         return self.do_open(build, req)
 
     def https_open(self, req):
-        def build(host, port=None, strict=None, timeout=0):    
+        def build(host, port=None, strict=None, timeout=0):
             conn = SocksiPyConnectionS(*self.args, host=host, port=port, strict=strict, timeout=timeout, **self.kw)
             return conn
         return self.do_open(build, req)

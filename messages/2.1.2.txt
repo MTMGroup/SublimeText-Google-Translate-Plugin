@@ -1,0 +1,27 @@
+Congratulations! Package updated!
+=================================
+
+**Current Version:** 2.1.2
+
+Updates:
+=======
+
+1. Added keep translating down the line
+
+
+
+------------------
+
+
+
+Sublime Text Google 翻译插件
+==========================
+
+**当前版本:** 2.1.2
+
+------------------
+
+更新:
+====
+
+1. 增加了不断的翻译
